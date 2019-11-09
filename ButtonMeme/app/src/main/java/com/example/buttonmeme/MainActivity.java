@@ -32,15 +32,25 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
 
-        //Add Buttons to selectScroll
-        /*Button memeButton = (Button) new Button(this);
-        memeButton.setText("Some Text");
-        linearLayout.addView(memeButton);
+        //Declare and initialize all meme buttons
+        Button meme1, meme2, meme3, meme4, meme5;
+        meme1 = (Button) findViewById(R.id.meme1);
+        meme2 = (Button) findViewById(R.id.meme2);
+        meme3 = (Button) findViewById(R.id.meme3);
+        meme4 = (Button) findViewById(R.id.meme4);
+        meme5 = (Button) findViewById(R.id.meme5);
 
-        selectScroll.addView(linearLayout);*/
+        meme1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
 
         Button selectButton = (Button) findViewById(R.id.selectButton);
-        selectButton.setOnClickListener(new View.OnClickListener(){
+        selectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(selectScroll.isShown())
