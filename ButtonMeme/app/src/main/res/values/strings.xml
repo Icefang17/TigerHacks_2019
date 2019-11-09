@@ -3,4 +3,8 @@
     <string name="select_meme">Select Meme</string>
     <string name="options">Options</string>
     <string name="press">Press</string>
+    <string name="meme_1">Meme 1</string>
+    <string name="meme_2">Meme 2</string>
+    <string name="meme_3">Meme 3</string>
+    <string name="meme">Meme</string>
 </resources>

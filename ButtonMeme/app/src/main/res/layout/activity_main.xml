@@ -43,10 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="256dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="256dp"
         android:background="@drawable/custom_button"
         android:text="@string/press"
         app:layout_constraintBottom_toTopOf="@+id/selectButton"
@@ -55,17 +55,65 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="130dp"
+        android:id="@+id/selectScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="#BEC2CB"
+        android:scrollbarStyle="insideOverlay"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/selectButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
+            android:id="@+id/memeList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:background="#000000"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:padding="5dp" >
+
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/meme1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BEC2CB"
+                    android:text="@string/meme"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/meme2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BEC2CB"
+                    android:text="@string/meme"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+                </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 
