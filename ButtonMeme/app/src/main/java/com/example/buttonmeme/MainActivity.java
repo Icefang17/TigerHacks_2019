@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button soundButton = (Button) findViewById(R.id.soundButton);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.alotofdamage);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.cantbelieve);
         soundButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
