@@ -54,6 +54,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/memeView"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#BEC2CB"
+        android:gravity="center"
+        android:text="@string/meme_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/soundButton" />
+
     <ScrollView
         android:id="@+id/selectScroll"
         android:layout_width="0dp"
@@ -65,7 +83,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:scrollbarStyle="insideOverlay"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/selectButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,32 +97,33 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:orientation="vertical"
-            android:visibility="visible"
-            android:padding="5dp" >
+            android:padding="5dp"
+            android:visibility="visible">
 
             <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp" >
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/meme1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:background="#BEC2CB"
+                    android:gravity="center"
+                    android:padding="5dp"
                     android:text="@string/meme_1"
                     android:textColor="#000000"
-                    android:visibility="visible"
-                    android:padding="5dp" />
+                    android:visibility="visible" />
 
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp" >
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/meme2"
@@ -117,12 +136,13 @@
                     android:textColor="#000000"
                     android:visibility="visible" />
 
-                </RelativeLayout>
+            </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp" >
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/meme3"
@@ -136,11 +156,12 @@
                     android:visibility="visible" />
 
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp" >
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/meme4"
@@ -154,11 +175,12 @@
                     android:visibility="visible" />
 
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp" >
+                android:padding="5dp">
 
                 <Button
                     android:id="@+id/meme5"
