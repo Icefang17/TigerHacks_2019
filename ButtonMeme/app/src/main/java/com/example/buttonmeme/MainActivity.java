@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 selectScroll.setVisibility(View.GONE);
-                //final mp = MediaPlayer.create(this, R.raw.alotofdamage);
                 TextView memeView = (TextView) findViewById(R.id.memeView);
                 memeView.setText(getText(R.string.meme_2));
             }
@@ -100,6 +99,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TextView memeView = (TextView) findViewById(R.id.memeView);
+                switch(memeView) {
+                    case getString(R.string.meme_1):
+                        break;
+                    case getStr
+                }
                 //if(memeView.getText() != getText(R.string.meme_1))
                     //mp.start();
             }
