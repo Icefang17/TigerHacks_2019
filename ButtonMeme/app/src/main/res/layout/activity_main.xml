@@ -194,6 +194,63 @@
                     android:visibility="visible" />
 
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/meme6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BEC2CB"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/meme_6"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/meme7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BEC2CB"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/meme_7"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/meme8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#BEC2CB"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/meme_8"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 
